@@ -63,16 +63,29 @@
             <div align="center" style="margin-top:35px; margin-bottom:35px;">
                 <img src="./backoffice-screenshots/back_usuarios_detalle.png">
             </div>
-            Tambien se contar&aacute; con una tabla en la cu&aacute;l se podran observar todos los cursos en los cuales el usuario est&aacute; inscripto como estudiante.
+            Tambien se contar&aacute; con una tabla en la cu&aacute;l se podran observar todos los cursos en los cuales el usuario 
+            est&aacute; inscripto como estudiante. En caso de que el estudiante no est&acute; inscripto en ning&uacute;n curso, entonces
+            esta secci&oacute;n no ser&aacute; visualizada puesto que la tabla se encontrar&iacute;a vac&iacute;a
             <div align="center" style="margin-top:35px; margin-bottom:35px;">
                 <img src="./backoffice-screenshots/back_usuarios_detalle_cursos.png">
             </div>
             <h4>M&eacute;tricas de Usuarios</h4>
-                <p>
-                    Dentro de este apartado es posible ver distintas m&eacute;tricas en funci&oacute;n del tiempo. Algunas de estas metricas son: 
-                    Tipos de login realizados, nuevos registros, bloqueos a usuarios, y cantidad de veces que se recuperaron las contrase&ntilde;as
-                </p>
-            
+            <p>
+                Dentro de este apartado es posible ver distintas m&eacute;tricas en funci&oacute;n del tiempo. Algunas de estas metricas son: 
+                Tipos de login realizados, nuevos registros, bloqueos a usuarios, y cantidad de veces que se recuperaron las contrase&ntilde;as.
+                <br>
+                <br>
+                El valor obtenido por las m&eacute;tricas depender&aacute; de la cantidad de d&iacute;as seleccionados en el input previo al
+                bot&oacute;n de generar m&eacute;tricas. Luego de presionado este bot&oacute;n, generar&aacute; las m&eacute;tricas para la
+                cantidad de d&iacute;as hacia atras solicitada.
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./backoffice-screenshots/metricas_1.png">
+            </div>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./backoffice-screenshots/metricas_2.png">
+            </div>
+        
             <h3>Cursos</h3>
 
             En este apartado se listar&aacute;n todos los cursos del sistema mostrando sus nombres, direcciones de correo electr&oacute;nico de sus due&ntilde;os, 
@@ -171,12 +184,9 @@
                 generar una cuenta nueva con un usuario de google que seleccionemos, como tambi&eacute;n acceder con una cuenta ya generada. Si es la primera vez que se inicia
                 sesi&oacute;n en la aplicaci&oacute;n, esta autom&aacute;ticamente generar&aacute; los procesos necesarios para la creaci&oacute;n de la cuenta.
             </p>
-
             <div align="center" style="margin-top:35px; margin-bottom:35px;">
                 <img src="./app-screenshots/Login.png">
             </div>
-
-
 
             <h3>
                 Inscribirme a un curso
@@ -196,13 +206,6 @@
             </div>
 
             <h3>
-                Visualizar multimedia de un curso
-            </h3>
-            <h1>
-                AUN SIN FINALIZAR
-            </h1>
-
-            <h3>
                 Visualizar mi perfil
             </h3>
             <p>
@@ -219,8 +222,11 @@
             </h4>
             <p>
                 Desde la secci&oacute;n "My Profile", en el l&aacute;piz que se encuentra en la secci&oacute;n superior derecha, podemos realizar una edici&oacute;n de perfil,
-                que nos permite modificar nuestro nombre de usuario.
+                que nos permite modificar nuestro nombre de usuario, y nuestro avatar.
             </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/EditProfile.png">
+            </div>
             
             <h4>
                 Cambiar mi contrase&ntilde;a
@@ -230,15 +236,177 @@
                 por separado que nos permiten tratar ambos casos por separado.
             </p>
             <div align="center" style="margin-top:35px; margin-bottom:35px;">
-                <img src="./app-screenshots/EditProfile.png">
+                <img src="./app-screenshots/EditProfile_2.png">
+            </div>
+            
+            <h3>
+                Operaciones con los cursos
+            </h3>
+            <p>
+                Dentro de los cursos podemos realizar las siguientes operaciones: Visualizar contenido multimedia, realizar examenes, y ver nuestra nota final
+                y comentarios en un ex&aacute;men dado. Estas opciones pueden ser accedidas desde las opciones de un curso:
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/OpcionesCurso.jpg">
+            </div>
+            <h4>
+                Visualizar Multimedia
+            </h4>
+            <p>
+                Para visualizar la multimedia accedemos a la secci&oacute;n de view en donde seremos capaces de visualizar en una forma de carrusel,
+                los distintos elementos multimedia del curso, movilizandonos hacia la izquierda o hacia la derecha haciendo swipe. 
+                Tambi&eacute;n seremos capaces de manipular la velocidad de los videos y el zoom de la multimedia.
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/MultimediaCurso.jpg">
+            </div>
+            <h4>
+                Ver examenes en un curso
+            </h4>
+            <p>
+                Para visualizar los examenes de un curso podemos acceder a los mismos desde el item "Exams" en el listado de contenido de un curso
+                en el cual estamos inscripto. En ella podremos ver el listado de examenes, y aplicarles un ordenamiento por fecha de creaci&oacute;n
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/ListadoExamenes.jpg">
+            </div>
+            <h4>
+                Realizar un ex&aacute;men en un curso
+            </h4>
+            <p>
+                Para realizar un ex&aacute;men como estudiante de un curso, debemos desde el listado de examenes nombrado en la secci&oacute;n anterior,
+                seleccionar uno de ellos, y nos llevar&aacute; a una ventana como la siguiente en la cual podremos responder las preguntas que se nos
+                presenten, y enviar el contenido de las mismas con el bot&oacute;n de submit:
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/ResolverExamen.jpg">
             </div>
 
             <h3>
-                Rendir un ex&aacute;men en un curso
+                Cursos Propios
             </h3>
-            <h1>
-                AUN SIN FINALIZAR
-            </h1>
+            <h4>
+                Crear un curso propio
+            </h4>
+            <p>
+                Para crear un curso propio debemos ir a la seccion de "My Courses" en la barra de navegaci&oacute;n, y presionar el boton de "Create"
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/CursosPropios.jpg">
+            </div>
+            <p>
+                Y esto nos llevar&aacute; a la secci&oacute;n de creaci&oacute;n de cursos en donde podremos completar los datos del mismo, y generar
+                el curso en estado de edici&oacute;n:
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/CrearCurso.jpg">
+            </div>
+
+            <h4>
+                Operar con cursos propios
+            </h4>
+            <p>
+                Para operar con cursos propios desde la secci&oacute;n "My Courses" podemos acceder a las siguientes opciones:
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/CursoPropioOpciones.jpg">
+            </div>
+
+            <h4>
+                Ver un curso como lo ver&iacute;a un estudiante
+            </h4>
+            <p>
+                Desde el boton de view podemos visualizar como ver&iacute;a un estudiante publicado nuestro curso desde la p&aacute;gina principal.
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/CursoPropioVistaEstudiante.jpg">
+            </div>
+
+            <h4>
+                Editar un curso propio
+            </h4>
+            <p>
+                Cuando poseemos un curso propio a&uacute;n sin publicar, podemos editarlo desde el boton "Edit", con las siguientes opciones:
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/CursoPropioEditar.jpg">
+            </div>
+            <p>
+                Adem&aacute;s en la secci&oacute;n de edici&oacute;n podemos tambi&eacute;n cargar contenido multimedia que puede provenir desde
+                una grabaci&oacute;n con la camara, una foto que sea tomada, o desde la galer&iacute; en cuesti&oacute;n. Este contenido ser&aacute;
+                el que sea visualizado por los estudiantes del curso una vez que sea publicado.
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/CursoPropioEditar_2.jpg">
+            </div>
+            <p>
+                Por &uacute;ltimo en esta secci&oacute;n tambi&eacute;n podemos publicar nuestros cursos si creemos que ya poseen una edici&oacute;n
+                pulida y finalizada. Considerar que si el curso es publicado, ya no podr&aacute; ser editado. Lo &uacute;nico que podr&aacute; ser
+                editado de ellos ser&aacute;n los examenes si a&uacute;n no poseen ninguna respuesta de ning&uacute;n usuario presente en el sistema.<br/>
+                En caso de que exista alguna respuesta de usuario a un ex&aacute;men dado, entonces no podr&aacute; ser editado tampoco.
+            </p>
+
+            <h4>
+                Gestionar Examenes
+            </h4>
+            <p>
+                Al poseer un curso en estado de edici&oacute;n, podemos agregar o eliminar examenes al mismo, y editarlos. Esto puede hacerse desde
+                la secci&oacute;n de "Exams" que se visualiza de la siguiente forma:
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/CursoPropioExamenes.jpg">
+            </div>
+            <p>
+                Y la creaci&oacute;n de los mismos podemos accederla desde el bot&oacute;n respectivo de "Create" que nos llevar&aacute; a la siguiente
+                ventana:
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/CrearExamen.jpg">
+            </div>
+            <p>
+                Y en donde con el boton de "+" podremos añadir preguntas, que podr&aacute;n ser editadas y/o eliminadas. Las preguntas pueden ser de 4
+                tipos en particular: Verdadero o Falso, Multiple Choice, Single Choice, o de Desarrollo.
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/AgregarPreguntaExamen.jpg">
+            </div>
+            <p>
+                Finalmente para guardar el ex&aacute;men debemos apretar el boton del diskette para que este sea almacenado en el curso.
+            </p>
+
+            <h4>
+                Ver y Añadir Colaboradores
+            </h4>
+            <p>
+                Desde la secci&oacute;n "Colaboradores" podemos enviar invitaciones a nuevos colaboradores a partir de su email, presionando el 
+                bot&oacute;n "ADD", y podemos visualizar los colaboradores actuales que poseemos en nuestros cursos.
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/CursoPropioAgregarColaboradores.jpg">
+            </div>
+
+            <h4>
+                Visualizar Estudiantes En Curso
+            </h4>
+            <p>
+                Para visualizar los estudiantes que se encuentren inscriptos a nuestro curso, podemos acceder a la secci&oacute;n "Students",
+                en donde se nos presentar&aacute; un listado de todos los alumnos que se encuentran inscriptos a nuestro curso en cuesti&oacute;n
+            </p>
+            <div align="center" style="margin-top:35px; margin-bottom:35px;">
+                <img src="./app-screenshots/CursoPropioVerEstudiantes.jpg">
+            </div>
+
+
+            <h3>
+                Pago de Suscripciones
+            </h3>
+            <h1>TODAVÍA SIN FINALIZAR</h1>
+
+            <h3>
+                Env&iacute;o de mensajes directos
+            </h3>
+            <h1>TODAVÍA SIN FINALIZAR</h1>
+
         </div>
     </div>
 
